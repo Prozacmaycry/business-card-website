@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио — Проекты</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Основное меню">
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li>
+                    <button id="themeToggle" aria-label="Переключить тему" class="theme-btn">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <div class="section-header" data-aos="fade-down">
+                <h1>Мои проекты</h1>
+                <p class="section-subtitle">Реализованные работы и текущие разработки</p>
+            </div>
+
+            <div class="projects-grid">
+    <!-- Завершенные проекты -->
+    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-content">
+            <h2>Сайт-портфолио</h2>
+            <div class="project-meta">
+                <span class="project-date">Январь 2024</span>
+                <span class="project-tag">Веб-разработка</span>
+            </div>
+            <p>Персональный сайт-портфолио с адаптивным дизайном, созданный с использованием HTML, CSS и JavaScript. Реализована система переключения тем.</p>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-content">
+            <h2>Telegram бот</h2>
+            <div class="project-meta">
+                <span class="project-date">Март 2024</span>
+                <span class="project-tag">Боты</span>
+            </div>
+            <p>Многофункциональный бот для Telegram с системой уведомлений и интеграцией с внешними API.</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Telegram API</span>
+            </div>
+        </div>
+    </article>
+
+                
+
+                <article class="project-card future" data-aos="fade-up" data-aos-delay="300">
+    <div class="project-content">
+        <h2>Обучение ручному тестированию</h2>
+        <div class="project-meta">
+            <span class="project-date">Начало: Апрель 2024</span>
+            <span class="project-tag">Образование</span>
+        </div>
+        <p>Изучаю основы ручного тестирования ПО: жизненный цикл багов, тест-кейсы, чек-листы, методы и уровни тестирования. Работаю с инструментами для отслеживания задач (Jira), тест-документацией и основами клиент-серверной архитектуры. В планах — практика на тестовых проектах и переход к изучению автоматизации.</p>
+        <div class="project-tech">
+            <span>Jira</span>
+            <span>TestRail</span>
+            <span>Postman</span>
+            <span>HTTP/REST</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 60%"></div>
+        </div>
+    </div>
+</article>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Kravchuk.work</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

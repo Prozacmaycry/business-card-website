@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио — Главная</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet" />
+  
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header data-aos="fade-down">
+    <nav aria-label="Основное меню">
+      <ul class="nav-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О себе</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li>
+          <button id="themeToggle" aria-label="Переключить тему" class="theme-btn">
+            <!-- Иконка солнца -->
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Иконка луны -->
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-section" data-aos="fade-up">
+      <div class="intro-photo" data-aos="zoom-in" data-aos-delay="100">
+        <img src="awa.png" alt="Моё фото" />
+      </div>
+      <div class="intro-text" data-aos="fade-left" data-aos-delay="200">
+        <h2>Мой путь в разработке и тестировании</h2>
+        <p>Уже несколько лет я занимаюсь разработкой и недавно начал изучать тестирование. За это время освоил основные навыки программирования и постепенно начинаю разбираться в том, как обеспечивать качество кода с помощью базовых практик тестирования.</p>
+
+        <div class="stats">
+          <div class="stat" data-aos="flip-left" data-aos-delay="300">
+            <strong>5</strong>
+            <span>лет</span>
+            <p>Обучения по специальности Computer Science и курсы от Huawei/Stepik.</p>
+          </div>
+          <div class="stat" data-aos="flip-left" data-aos-delay="400">
+            <strong>4</strong>
+            <span>проекта</span>
+            <p>Разработал несколько сайтов и Telegram-бот.</p>
+          </div>
+          <div class="stat" data-aos="flip-left" data-aos-delay="500">
+            <strong>2</strong>
+            <span>сертификата</span>
+            <p>Курсы по программированию и тестированию (Huawei, Stepik).</p>
+          </div>
+          <div class="stat" data-aos="flip-left" data-aos-delay="600">
+            <strong>15+</strong>
+            <span>навыков</span>
+            <p>Языки, фреймворки и инструменты для разработки и тестирования.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up" data-aos-delay="200">
+    <p>© <span id="year"></span> Kravchuk.work</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+  <!-- Твоя логика (переключение темы и прочее) -->
+  <script src="script.js"></script>
+</body>
+</html>

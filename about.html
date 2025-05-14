@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио — О себе</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+   <header>
+    <nav aria-label="Основное меню">
+        <ul class="nav-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О себе</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li>
+                <button id="themeToggle" aria-label="Переключить тему" class="theme-btn">
+                    <!-- Иконка солнца -->
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Иконка луны -->
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+   <main>
+    <section class="about-me-section">
+    <div class="about-card" data-aos="zoom-in">
+        <h1>О себе</h1>
+
+        <p data-aos="fade-up" data-aos-delay="100"><strong>Имя</strong>: Александр Кравчук</p>
+        <p data-aos="fade-up" data-aos-delay="200"><strong>Город</strong>: Павлодар</p>
+        <p data-aos="fade-up" data-aos-delay="300"><strong>Университет</strong>: Торайгыров Университет</p>
+        <p data-aos="fade-up" data-aos-delay="400"><strong>Специальность</strong>: Computer Science</p>
+        <p data-aos="fade-up" data-aos-delay="500"><strong>Интересы</strong>: Веб-разработка, дизайн интерфейсов, тестирование</p>
+        <p data-aos="fade-up" data-aos-delay="600"><strong>Навыки</strong>: CSS, Git, HTML, ручное тестирование, SQL, работа над ошибками, отчетность</p>
+        <p data-aos="fade-up" data-aos-delay="700"><strong>Хобби</strong>: Игры, спорт, музыка</p>
+        <p data-aos="fade-up" data-aos-delay="800"><strong>Цели</strong>: Продолжать развиваться в веб-разработке и тестировании</p>
+    </div>
+</section>
+
+
+</main>
+
+
+
+
+    <footer>
+        <p>© <span id="year"></span> Kravchuk.swag</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

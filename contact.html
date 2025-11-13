@@ -1,112 +1,372 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио — Контакты</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая грамотность для взрослых</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Шапка -->
     <header>
-        <nav aria-label="Основное меню">
-            <ul class="nav-list">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О себе</a></li>
-                <li><a href="projects.html">Проекты</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-                <li>
-                    <button id="themeToggle" aria-label="Переключить тему" class="theme-btn">
-                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="12" cy="12" r="5"></circle>
-                            <line x1="12" y1="1" x2="12" y2="3"></line>
-                            <line x1="12" y1="21" x2="12" y2="23"></line>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                            <line x1="1" y1="12" x2="3" y2="12"></line>
-                            <line x1="21" y1="12" x2="23" y2="12"></line>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                        </svg>
-                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    Цифровая грамотность
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#about">О курсе</a></li>
+                    <li><a href="modules.html">Модули</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Запись</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-  <!-- Контактная информация первая -->
-  <section class="project-form-container" data-aos="fade-up">
-    <h2>Контактная информация</h2>
-    <p><strong>Email:</strong> nn677513nn@mail.com</p>
-    <p><strong>Telegram:</strong> <a href="https://t.me/notserch" target="_blank">@notserch</a></p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/yprozacmaycry" target="_blank">@prozacmaycry</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/WILLGUAPA" target="_blank">github.com/WILLGUAPA</a></p>
-  </section>
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Цифровая грамотность для взрослых</h1>
+                <p>Цифровой мир — это просто! Осваивайте технологии с уверенностью и комфортом.</p>
+                <p><em>Никогда не поздно научиться! Курс для тех, кто хочет идти в ногу со временем.</em></p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Записаться на курс</a>
+                    <a href="modules.html" class="btn">Смотреть программу</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Форма — вторая -->
-  <section class="project-form-container" data-aos="fade-up" style="margin-top: 50px;">
-    <h2>Связаться со мной</h2>
-    <form id="contact-form">
-      <div class="form-group">
-        <label for="from_name">Имя:</label>
-        <input type="text" id="from_name" name="from_name" required />
-      </div>
+    <!-- Для кого курс - ИСПРАВЛЕННЫЙ -->
+    <section id="audience" class="audience-section">
+        <div class="container">
+            <h2>Этот курс создан специально для вас, если:</h2>
+            <div class="audience-cards">
+                <div class="audience-card fade-in">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">📱</div>
+                    <h3>Теряетесь в смартфоне</h3>
+                    <p>Подарили новый телефон, а вы боитесь нажать "не туда" и что-то сломать</p>
+                </div>
+                <div class="audience-card fade-in">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">🤔</div>
+                    <h3>Боитесь интернета</h3>
+                    <p>Не знаете, как безопасно пользоваться онлайн-сервисами и делать покупки</p>
+                </div>
+                <div class="audience-card fade-in">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">💬</div>
+                    <h3>Хотите общаться онлайн</h3>
+                    <p>Мечтаете о видео-звонках с детьми и внуками, но не знаете как</p>
+                </div>
+                <div class="audience-card fade-in">
+                    <div class="card-number">04</div>
+                    <div class="card-icon">🛒</div>
+                    <h3>Хотите покупать онлайн</h3>
+                    <p>Слышали про удобные покупки без очередей, но не решались попробовать</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="form-group">
-        <label for="from_email">Email:</label>
-        <input type="email" id="from_email" name="from_email" required />
-      </div>
+    <!-- О курсе -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Чему вы научитесь за время курса?</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Мы прошли весь путь от включения телефона до безопасных онлайн-покупок. Наши занятия построены на практике: вы сразу пробуете делать то, что пригодится в жизни.</p>
+            
+            <div class="features">
+                <div class="feature fade-in">
+                    <div class="icon">🧑‍🏫</div>
+                    <h3>Простым языком</h3>
+                    <p>Объясняем так, чтобы было понятно абсолютно всем, без сложных терминов</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="icon">🔄</div>
+                    <h3>Только практика</h3>
+                    <p>Вы выполняете задания сами, под чутким руководством преподавателя</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="icon">👥</div>
+                    <h3>Поддержка и общение</h3>
+                    <p>Занятия в маленьких группах, где все друг другу помогают</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="form-group">
-        <label for="message">Сообщение:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
+    <!-- Слайдер в стиле Polaris - ПОЛНОСТЬЮ ПЕРЕДЕЛАННЫЙ -->
+    <section class="promo-slider">
+    <div class="container">
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                <!-- Все три слайда с одной картинкой -->
+                <div class="slide">
+                    <div class="slider-text">
+                        <div class="slider-badge">Только в нашем центре</div>
+                        <h2>Освойте технологии<br>и получите скидку 30%</h2>
+                        <p class="slider-subtitle">Запишитесь на курс до 31 декабря и получите персональную скидку на все последующие занятия</p>
+                        <div class="slider-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Гарантия результата</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Маленькие группы</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn">ЗАПИСАТЬСЯ СО СКИДКОЙ</a>
+                    </div>
+                    <div class="slider-image">
+                        <img src="image/assets_task_01k7p7gca0exv8dk48prayygrg_1760609034_img_0.webp" alt="Обучение цифровой грамотности">
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slider-text">
+                        <div class="slider-badge">Специальное предложение</div>
+                        <h2>Первое занятие<br>бесплатно</h2>
+                        <p class="slider-subtitle">Приходите на пробный урок и убедитесь, что наш курс вам подходит</p>
+                        <div class="slider-features">
+                            <div class="feature-item">
+                                <i class="fas fa-star"></i>
+                                <span>Без обязательств</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>90 минут</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-orange">ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК</a>
+                    </div>
+                    <div class="slider-image">
+                        <img src="image/assets_task_01k7p7gca0exv8dk48prayygrg_1760609034_img_0.webp" alt="Обучение цифровой грамотности">
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="slider-text">
+                        <div class="slider-badge">Новогодняя акция</div>
+                        <h2>Дарите знания<br>близким</h2>
+                        <p class="slider-subtitle">Подарочный сертификат на курс цифровой грамотности для ваших родителей</p>
+                        <div class="slider-features">
+                            <div class="feature-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Красивый дизайн</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Год на активацию</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-orange">ПРИОБРЕСТИ СЕРТИФИКАТ</a>
+                    </div>
+                    <div class="slider-image">
+                        <img src="image/assets_task_01k7p7gca0exv8dk48prayygrg_1760609034_img_0.webp" alt="Обучение цифровой грамотности">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-nav">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </div>
+    </section>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
 
-      <button type="submit" class="submit-btn">Отправить</button>
-      <p id="form-message" style="margin-top: 10px;"></p>
-    </form>
-  </section>
-</main>
+    
 
+       <!-- Отзывы -->
+    <section id="reviews" class="testimonials-section">
+        <div class="container">
+            <h2>Наши ученики делятся впечатлениями</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial fade-in">
+                    <p class="testimonial-text">«Дети подарили айфон, а я боялась к нему подойти. Теперь мы с дочкой из другой страны каждый день общаемся по видео! Спасибо за терпение и понятные объяснения!»</p>
+                    <p class="testimonial-author">
+                        <i class="fas fa-user"></i>
+                        Мария, 65 лет
+                    </p>
+                </div>
+                <div class="testimonial fade-in">
+                    <p class="testimonial-text">«Научился платить за квартиру по телефону и заказывать такси. Чувствую себя современным человеком! Очереди в банке остались в прошлом.»</p>
+                    <p class="testimonial-author">
+                        <i class="fas fa-user"></i>
+                        Николай, 58 лет
+                    </p>
+                </div>
+                <div class="testimonial fade-in">
+                    <p class="testimonial-text">«Боялась интернета, думала, все мои деньги сейчас украдут. Мне объяснили, как отличить безопасный сайт от мошенников. Теперь сама покупаю книги и семена для дачи онлайн!»</p>
+                    <p class="testimonial-author">
+                        <i class="fas fa-user"></i>
+                        Галина, 62 года
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Готовы сделать свою жизнь удобнее?</h2>
+            <p style="margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">Оставьте заявку, и мы свяжемся с вами, чтобы ответить на все вопросы и записать вас на ближайший поток.</p>
+            
+            <div class="form-container">
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="from_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Я согласен(а) на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="btn btn-orange" style="width: 100%;" id="submit-btn">
+                        Записаться на курс
+                    </button>
+                    <!-- Сообщение о статусе отправки -->
+                    <div id="form-message" style="margin-top: 15px; display: none;"></div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">Адрес: г. Павлодар</div>
+                <div class="contact-item">Телефон: +7 (747) 550-98-19</div>
+                <div class="contact-item">Длительность: 6 недель (2 занятия в неделю)</div>
+                <div class="contact-item">В группе: не более 8 человек</div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© <span id="year"></span> Kravchuk.swag</p>
-    </footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-laptop-code"></i>
+                    Цифровая грамотность
+                </div>
+                <p class="footer-description">
+                    Осваивайте технологии с уверенностью и комфортом. 
+                    Мы помогаем взрослым стать уверенными пользователями 
+                    цифровых технологий.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Навигация</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">О курсе</a></li>
+                    <li><a href="modules.html">Модули</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Запись</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (747) 550-98-19</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Павлодар ул. Чокина 25</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@digital-course.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Рассылка</h3>
+                <div class="footer-newsletter">
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; font-size: 0.9rem;">
+                        Подпишитесь на новости и акции
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                © Цифровая грамотность для взрослых, 2023. Все права защищены.
+            </div>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
-    </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("I57g_xcTJf_ttcC_n"); // <-- Твой публичный ключ
-  })();
-
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("Gmailcon", "template_y5hlga4", this) // <-- Подставь свой Template ID!
-      .then(() => {
-        document.getElementById("form-message").innerText = "Сообщение отправлено!";
-        this.reset();
-      }, (error) => {
-        document.getElementById("form-message").innerText = "Ошибка при отправке.";
-        console.error("EmailJS error:", error);
-      });
-  });
-</script>
-
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </body>
+<div class="assistant-fab">
+    <div class="assistant-icon">💬</div>
+</div>
+
+
+<div class="assistant-chat">
+    <div class="chat-header">
+        <h4>Помощник курса</h4>
+        <button class="close-chat">&times;</button>
+    </div>
+    <div class="chat-messages">
+        <div class="message assistant-message">
+            Привет! 👋 Хочешь записаться на курс или узнать подробности?
+        </div>
+    </div>
+    <div class="chat-actions">
+        <button class="chat-btn tg-btn">
+            <i class="fab fa-telegram"></i>
+            Написать в Telegram
+        </button>
+        <button class="chat-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            Написать в WhatsApp
+        </button>
+    </div>
+</div>
+
 </html>
